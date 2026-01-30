@@ -1,9 +1,9 @@
 import { createClient } from '@supabase/supabase-js';
 
-// In a real scenario, these would be process.env.REACT_APP_SUPABASE_URL
-// For this generated code to run safely without crashing, we check existence.
-const supabaseUrl = process.env.REACT_APP_SUPABASE_URL || '';
-const supabaseKey = process.env.REACT_APP_SUPABASE_ANON_KEY || '';
+// Access environment variables using Vite's import.meta.env
+// For Vercel, ensure you add VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY in Project Settings
+const supabaseUrl = import.meta.env?.VITE_SUPABASE_URL || '';
+const supabaseKey = import.meta.env?.VITE_SUPABASE_ANON_KEY || '';
 
 // If credentials are valid, create real client. Otherwise null (handled by logic).
 export const supabase = (supabaseUrl && supabaseKey) 
