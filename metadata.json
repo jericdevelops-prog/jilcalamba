@@ -1,0 +1,7 @@
+{
+  "name": "JIL Pasay App",
+  "description": "A high-performance, offline-capable PWA for the JIL Pasay church community featuring role-based access, real-time life groups, and digital spiritual tools.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
